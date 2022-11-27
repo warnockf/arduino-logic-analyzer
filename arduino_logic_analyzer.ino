@@ -74,7 +74,7 @@ void onClock() {
   char rw = digitalRead(RW) ? 'R' : 'W';
 
   // Print hex data
-  sprintf(output, "\t%04X\t%s\t%02X", address, rw, data);
+  sprintf(output, "\t%04X\t%c\t%02X", address, rw, data);
   Serial.println(output);
 }
 
